@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图1</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.viewport{
+			width: 500px;
+			height: 300px;
+			overflow: hidden;
+		}
+		.wrap{
+			position: relative;
+			width: 1500px;
+			height: 300px;
+			overflow: hidden;
+			animation: carousel linear 6s infinite 0s normal;
+		}
+		.wrap img{
+			display: inline-block;
+			width: 500px;
+			height: 300px;
+			float: left;
+		}
+		@keyframes carousel{
+			0%{
+				left: 0px;
+			}
+			20%{
+				left: -0px;
+			}
+			40%{
+				left: -500px;
+			}
+			60%{
+				left: -500px;
+			}
+			80%{
+				left: -1000px;
+			}
+			100%{
+				left:-1000px;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="viewport">
+	<div class="wrap">
+        <img src="C:\Users\Administrator\Desktop\thoughtworks\网页\轮播图\1.jpg" alt="">
+        <img src="C:\Users\Administrator\Desktop\thoughtworks\网页\轮播图\2.jpg" alt="">
+        <img src="C:\Users\Administrator\Desktop\thoughtworks\网页\轮播图\3.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
